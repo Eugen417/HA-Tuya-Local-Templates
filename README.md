@@ -1,0 +1,1 @@
+# HA-Local-Tuya-Template
