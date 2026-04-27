@@ -1,0 +1,162 @@
+- humidifier:
+    friendly_name: HANZO Z6 Pro
+    entity_category: None
+    humidifier_set_humidity_dp: '13'
+    humidifier_current_humidity_dp: '14'
+    min_humidity: 40
+    max_humidity: 100
+    humidifier_available_modes: {}
+    device_class: humidifier
+    id: '1'
+    platform: humidifier
+    icon: ''
+- switch:
+    friendly_name: Питание
+    entity_category: None
+    current: '1'
+    restore_on_reconnect: false
+    is_passive_entity: false
+    device_class: switch
+    id: '1'
+    platform: switch
+    icon: ''
+- sensor:
+    friendly_name: Температура воздуха
+    entity_category: diagnostic
+    unit_of_measurement: °C
+    device_class: temperature
+    state_class: measurement
+    id: '10'
+    platform: sensor
+    icon: ''
+- select:
+    friendly_name: Подача пара
+    entity_category: config
+    select_options:
+      level_1: Уровень 1
+      level_2: Уровень 2
+      level_3: Уровень 3
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '23'
+    platform: select
+    icon: ''
+- sensor:
+    friendly_name: Влажность воздуха
+    entity_category: diagnostic
+    unit_of_measurement: '%'
+    device_class: humidity
+    state_class: measurement
+    id: '14'
+    platform: sensor
+    icon: ''
+- switch:
+    friendly_name: Ночной режим
+    entity_category: config
+    current: '16'
+    restore_on_reconnect: false
+    is_passive_entity: false
+    device_class: switch
+    id: '16'
+    platform: switch
+    icon: 'mdi:lightbulb-night-outline'
+- switch:
+    friendly_name: Подсветка бака
+    entity_category: config
+    current: '36'
+    restore_on_reconnect: false
+    is_passive_entity: false
+    device_class: switch
+    id: '36'
+    platform: switch
+    icon: ''
+- switch:
+    friendly_name: Защита от детей
+    entity_category: config
+    current: '29'
+    restore_on_reconnect: false
+    is_passive_entity: false
+    device_class: switch
+    id: '29'
+    platform: switch
+    icon: 'pap:child_lock_button'
+- switch:
+    friendly_name: Тёплый пар
+    entity_category: config
+    current: '26'
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '26'
+    platform: switch
+    icon: ''
+- switch:
+    friendly_name: УФ-лампа
+    entity_category: config
+    current: '21'
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '21'
+    platform: switch
+    icon: ''
+- select:
+    friendly_name: Таймер
+    entity_category: config
+    select_options:
+      cancel: Нет
+      1h: 1 час
+      2h: 2 часа
+      3h: 3 часа
+      4h: 4 часа
+      5h: 5 часов
+      6h: 6 часов
+      7h: 7 часов
+      8h: 8 часов
+      9h: 9 часов
+      10h: 10 часов
+      11h: 11 часов
+      12h: 12 часов
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '19'
+    platform: select
+    icon: ''
+- sensor:
+    friendly_name: Код ошибки
+    entity_category: diagnostic
+    id: '22'
+    platform: sensor
+    icon: mdi:alert-circle-outline
+- select:
+    friendly_name: Цвет подсветки
+    entity_category: config
+    select_options:
+      cancle: Нет
+      Autogradient: Градиент
+      yellow: Жёлтый
+      purple: Фиолетовый
+      green: Зелёный
+      blue: Синий
+      cyan: Голубой
+      red: Красный
+      white: Белый
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '6'
+    platform: select
+    icon: ''
+- switch:
+    friendly_name: Автоматическое увлажнение
+    entity_category: config
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '101'
+    platform: switch
+    icon: pap:humidity_button
+- switch:
+    friendly_name: Автоматическая яркость
+    entity_category: config
+    restore_on_reconnect: false
+    is_passive_entity: false
+    id: '102'
+    platform: switch
+    icon: mdi:brightness-auto
